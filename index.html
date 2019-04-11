@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#f2f2f2">
+
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>NES - Login</title>
+
+    <link rel="stylesheet" href="/assets/css/grotesk.css">
+    <link rel="stylesheet" href="/assets/css/remodal.css">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+  	<noscript>You need to enable JavaScript to run this app.</noscript>
+
+  	<div id="root" class="remodal-bg">
+
+      <img src="/assets/logo.png" alt="One London" class="strapline" />
+
+  		<div class="LoginRegister">
+
+  			<div class="form-box">
+  				<div class="titleLogin">
+  					Log In <!--<i class="fa fa-angle-down"></i>-->
+  				</div>
+
+  				<form class="forms" id="loginForm">
+  					<label>Username<input placeholder="Username" type="text"></label>
+            <label>Password<input placeholder="Password" type="password"></label>
+
+  					<div class="btn-box">
+              <a href="" class="forgotten">Forgotten Password</a>
+              <button class="succes login" type="button"><i class="fa fa-check"></i>Log In</button>
+  					</div>
+  				</form>
+
+  			</div>
+
+  		</div>
+
+      <div data-remodal-id="modal" class="modal">
+
+        <div class="modal__header">
+          Terms and Conditions
+          <button data-remodal-action="close" class="remodal-close"></button>
+        </div>
+
+        <div class="modal__content">
+
+          <p class="c3">
+            <span class="c2 c8">
+              Copy to come
+            </span>
+          </p>
+
+          </div><!-- ./modal__content -->
+
+          <div class="modal__footer">
+
+            <div class="btn-box">
+              <button class="decline succes" type="button"><i class="fa fa-times"></i>
+                Decline
+              </button>
+              <button class="agree succes" type="button" data-target="#loginForm"><i class="fa fa-check"></i>
+                Agree
+              </button>
+  					</div>
+
+          </div>
+        </div>
+      </div>
+
+  	</div><!-- #root -->
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/remodal.min.js"></script>
+    <script src="/assets/js/js.cookie.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+  </body>
+
+</html>
